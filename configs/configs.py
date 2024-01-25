@@ -8,10 +8,10 @@ def set_root_dir():
     try:
         if "C8_ENV" in os.environ and os.environ["C8_ENV"] == "Laptop":
             print("Laptop environment detected")
-            return f"C:\\Programming\\Github\\correl8\\config"  # laptop path
+            return f"C:\\Programming\\Github\\correl8"  # laptop path
         else:
             print("Desktop environment detected")
-            return ""  # desktop path
+            return f"D:\\Programming\\github\\correl8"  # desktop path
     except KeyError:
         raise ValueError("ENV environment variable not set")
 
